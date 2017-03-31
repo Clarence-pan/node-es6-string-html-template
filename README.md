@@ -1,9 +1,5 @@
 # ES6 string HTML template
 
-[![npm version](https://img.shields.io/npm/v/es6-string-html-template.svg)](https://www.npmjs.com/package/es6-string-html-template)
-[![](https://travis-ci.org/Clarence-pan/node-es6-string-html-template.svg?branch=master)](https://travis-ci.org/Clarence-pan/node-es6-string-html-template)
-
-
 [![NPM version][npm-image]][npm-url]
 ![Stability][stability]
 [![build status][travis-image]][travis-url]
