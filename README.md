@@ -1,4 +1,5 @@
-# ES6 string HTML template
+# ES6 string HTML template [![](https://travis-ci.org/Clarence-pan/es6-string-html-template.svg?branch=master)](https://travis-ci.org/Clarence-pan/es6-string-html-template)
+
 It is a brief HTML template using ES6 string template.
 
 # Install
