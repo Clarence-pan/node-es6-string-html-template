@@ -1,6 +1,6 @@
 const assert = require('power-assert')
 
-const {html, escape, raw} = require('..')
+const {html, escape, raw} = require('../lib/index.js')
 
 function renderArticle(data){
     return html`
