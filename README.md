@@ -7,7 +7,7 @@
 [![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![NPM download][download-image]][download-url]
-[![Gitter][gitter-image]][gitter-url]
+
 
 [npm-image]: https://img.shields.io/npm/v/es6-string-html-template.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/es6-string-html-template
@@ -22,8 +22,7 @@
 [snyk-url]: https://snyk.io/test/npm/es6-string-html-template
 [download-image]: https://img.shields.io/npm/dm/es6-string-html-template.svg?style=flat-square
 [download-url]: https://npmjs.org/package/es6-string-html-template
-[gitter-image]: https://img.shields.io/gitter/room/Clarence-pan/node-es6-string-html-template.svg?style=flat-square
-[gitter-url]: https://gitter.im/Clarence-pan/node-es6-string-html-template
+
 
 
 It is a brief HTML template using ES6 string template.
