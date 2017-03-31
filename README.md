@@ -1,5 +1,7 @@
 # ES6 string HTML template
 
+It is a brief HTML template using ES6 string template.
+
 [![NPM version][npm-image]][npm-url]
 ![Stability][stability]
 [![build status][travis-image]][travis-url]
@@ -24,8 +26,6 @@
 [download-url]: https://npmjs.org/package/es6-string-html-template
 
 
-
-It is a brief HTML template using ES6 string template.
 
 # Install
 
