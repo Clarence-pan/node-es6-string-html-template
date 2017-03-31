@@ -12,7 +12,41 @@ function renderArticle(data){
 }
 
 describe("Test CommonJS style modules", function(){
-    it('test rendering an article', function(){
+    it('Simple html should OK', function(){
+        let rendered = html`<p class="test">Hello world!</p>`
+        let expected = `<p class="test">Hello world!</p>`
+        assert(expected === rendered + '')
+    })
+
+    it('Simple list render should OK - nested Arrays will be expanded', function(){
+        let rendered = html`<ol class="test">${[1,2,3].map(x => html`<li>${x * 2}</li>`)}</ol>`
+        let expected = `<ol class="test"><li>2</li><li>4</li><li>6</li></ol>`
+    })
+
+    it('Varables will be escaped by default - avoiding xss', function(){        
+        let rendered = html`<p class="test">${`<b>Hello</b>`} world!</p>`
+        let expected = `<p class="test">&lt;b&gt;Hello&lt;/b&gt; world!</p>`
+        assert(expected === rendered + '')
+    })
+
+    it('Use raw() to avoid escape', function(){        
+        let rendered = html`<p class="test">${raw(`<b>Hello</b>`)} world!</p>`
+        let expected = `<p class="test"><b>Hello</b> world!</p>`
+        assert(expected === rendered + '')
+    })
+    
+    it('If you do NOT like to use raw(), use html() as function instead', function(){
+        let rendered = html(`<p class="test">Hello world!</p>`)
+        let expected = `<p class="test">Hello world!</p>`
+        assert(expected === rendered + '')
+
+        
+        rendered = html`<p class="test">${html(`<b>Hello</b>`)} world!</p>`
+        expected = `<p class="test"><b>Hello</b> world!</p>`
+        assert(expected === rendered + '')
+    })
+
+    it('A complex test: rendering an article', function(){
         let articleHtml = renderArticle({
             title: `Jim's daily`,
             content: `<ol>
@@ -49,6 +83,20 @@ describe("Test CommonJS style modules", function(){
     <footer>Tom created at 2017-04-01</footer>
 </article>`
 
-        assert(articleHtml + '' === expected)
+        assert(expected === articleHtml + '')
     })
+
+    it("Begining and ending spaces can be trimmed, but middle spaces will not -- useful for jQuery", function(){
+        let rendered = html.trim`
+<ol class="test">
+    ${[1,2,3].map(x => html`<li>${x * 2}</li>`)}
+</ol>
+`
+        let expected = `<ol class="test">
+    <li>2</li><li>4</li><li>6</li>
+</ol>`
+        assert(expected === rendered + '')
+    })
+    
+    
 })
