@@ -1,8 +1,34 @@
 # ES6 string HTML template
 
 [![npm version](https://img.shields.io/npm/v/es6-string-html-template.svg)](https://www.npmjs.com/package/es6-string-html-template)
-![Stability](https://img.shields.io/badge/stability-stable-brightgreen.svg)
 [![](https://travis-ci.org/Clarence-pan/node-es6-string-html-template.svg?branch=master)](https://travis-ci.org/Clarence-pan/node-es6-string-html-template)
+
+
+[![NPM version][npm-image]][npm-url]
+![Stability][stability]
+[![build status][travis-image]][travis-url]
+[![Test coverage][codecov-image]][codecov-url]
+[![David deps][david-image]][david-url]
+[![Known Vulnerabilities][snyk-image]][snyk-url]
+[![NPM download][download-image]][download-url]
+[![Gitter][gitter-image]][gitter-url]
+
+[npm-image]: https://img.shields.io/npm/v/es6-string-html-template.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/es6-string-html-template
+[stability]: https://img.shields.io/badge/stability-stable-brightgreen.svg
+[travis-image]: https://img.shields.io/travis/Clarence-pan/node-es6-string-html-template.svg?style=flat-square
+[travis-url]: https://travis-ci.org/Clarence-pan/node-es6-string-html-template
+[codecov-image]: https://codecov.io/gh/Clarence-pan/node-es6-string-html-template/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/Clarence-pan/node-es6-string-html-template
+[david-image]: https://img.shields.io/david/Clarence-pan/node-es6-string-html-template.svg?style=flat-square
+[david-url]: https://david-dm.org/Clarence-pan/node-es6-string-html-template
+[snyk-image]: https://snyk.io/test/npm/es6-string-html-template/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/es6-string-html-template
+[download-image]: https://img.shields.io/npm/dm/es6-string-html-template.svg?style=flat-square
+[download-url]: https://npmjs.org/package/es6-string-html-template
+[gitter-image]: https://img.shields.io/gitter/room/Clarence-pan/node-es6-string-html-template.svg?style=flat-square
+[gitter-url]: https://gitter.im/Clarence-pan/node-es6-string-html-template
+
 
 It is a brief HTML template using ES6 string template.
 
