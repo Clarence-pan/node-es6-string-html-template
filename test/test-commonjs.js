@@ -12,41 +12,43 @@ function renderArticle(data){
 }
 
 describe("Test CommonJS style modules", function(){
+    it('test rendering an article', function(){
+        let articleHtml = renderArticle({
+            title: `Jim's daily`,
+            content: `<ol>
+                        <li>Open computer</li>
+                        <li>Write <code>console.log("Hello world!")</code>
+                        </li>
+                    </ol>`,
+            author: 'Tom',
+            date: '2017-04-01',
+        })
 
-    let articleHtml = renderArticle({
-        title: `Jim's daily`,
-        content: `<ol>
-                    <li>Open computer</li>
-                    <li>Write <code>console.log("Hello world!")</code>
-                    </li>
-                </ol>`,
-        author: 'Tom',
-        date: '2017-04-01',
-    })
+        // console.log('' + articleHtml)
+        // output:
+        //
+        // <article>
+        //     <h1>Jim&#39;s daily</h1>
+        //     <ol>
+        //                 <li>Open computer</li>
+        //                 <li>Write <code>console.log("Hello world!")</code>
+        //                 </li>
+        //               </ol>
+        //     <footer>Tom created at 2017-04-01</footer>
+        // </article>
 
-    console.log('' + articleHtml)
-    // output:
-    //
-    // <article>
-    //     <h1>Jim&#39;s daily</h1>
-    //     <ol>
-    //                 <li>Open computer</li>
-    //                 <li>Write <code>console.log("Hello world!")</code>
-    //                 </li>
-    //               </ol>
-    //     <footer>Tom created at 2017-04-01</footer>
-    // </article>
 
-    const expected = `
+        const expected = `
 <article>
     <h1>Jim&#39;s daily</h1>
     <ol>
-                    <li>Open computer</li>
-                    <li>Write <code>console.log("Hello world!")</code>
-                    </li>
-                </ol>
+                        <li>Open computer</li>
+                        <li>Write <code>console.log("Hello world!")</code>
+                        </li>
+                    </ol>
     <footer>Tom created at 2017-04-01</footer>
 </article>`
 
-    assert(articleHtml + '' === expected)
+        assert(articleHtml + '' === expected)
+    })
 })
