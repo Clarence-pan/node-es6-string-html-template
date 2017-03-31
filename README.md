@@ -1,4 +1,8 @@
-# ES6 string HTML template [![](https://travis-ci.org/Clarence-pan/es6-string-html-template.svg?branch=master)](https://travis-ci.org/Clarence-pan/es6-string-html-template)
+# ES6 string HTML template
+
+[![npm version](https://img.shields.io/npm/v/es6-string-html-template.svg)](https://www.npmjs.com/package/es6-string-html-template)
+![Stability](https://img.shields.io/badge/stability-stable-brightgreen.svg)
+[![](https://travis-ci.org/Clarence-pan/node-es6-string-html-template.svg?branch=master)](https://travis-ci.org/Clarence-pan/node-es6-string-html-template)
 
 It is a brief HTML template using ES6 string template.
 
