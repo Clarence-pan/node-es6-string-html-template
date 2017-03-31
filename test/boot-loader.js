@@ -13,7 +13,7 @@ require('babel-register')({
         "stage-2"
     ],
     "plugins": [
-        "transform-runtime"
+        // "transform-runtime"
     ],
     "comments": false,
 })
